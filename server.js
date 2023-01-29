@@ -99,6 +99,7 @@ app.delete('/api/persons/:id', (req, res) => {
   persons = persons.filter(person => person.id !== id)
   res.status(204).end()
 })
+
 // GET info of how many entries are in persons objects
 app.get('/info', (req, res) => {
   let info = `<p>Phonebook has info for ${persons.length} people</p>`
